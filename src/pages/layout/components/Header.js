@@ -4,6 +4,7 @@ import {
   Stack,
   Box,
   Image,
+  Button,
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbLink,
@@ -13,14 +14,15 @@ import {
 import Fondo from "../../../assets/fondo.jpg";
 import Logo from "../../../assets/logoKnk.jpg";
 import { ColorModeSwitcher } from "../../../utils/ColorModeSwitcher";
-import { Outlet } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
 
 const Header = () => {
   const { colorMode } = useColorMode();
+  const navigate = useNavigate();
   return (
     <Stack bg={colorMode === "dark" ? "gray.600" : "#f2f2f2"}>
       <HStack display="flex" justifyContent="center" flexWrap="wrap">
-        <Box w="79%" h="400px">
+        <Box w="81%" h="400px" ml="10px">
           <Tooltip
             label="XXI Torneo de Karate Kenshukan"
             placement="top"
@@ -36,11 +38,76 @@ const Header = () => {
             />
           </Tooltip>
         </Box>
-        <HStack h="50px" bg="#1503ba" borderRadius="5px" w="78%">
+        <HStack h="50px" bg="#1503ba" borderRadius="5px" w="81%">
           <Box w="168px" h="168px" ml="-5px" mb="100px">
             <Image src={Logo} borderRadius="full" boxSize="100%" />
           </Box>
-          <Box>
+          <HStack>
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => {
+                navigate("../dashboard", { replace: true });
+              }}
+            >
+              Inicio
+            </Button>
+
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => {
+                navigate("../explain", { replace: true });
+              }}
+            >
+              ¿Que es karate-do?
+            </Button>
+
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => {
+                navigate("../places", { replace: true });
+              }}
+            >
+              ¿Donde practicar?
+            </Button>
+
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => {
+                navigate("../book", { replace: true });
+              }}
+            >
+              Karatedo: Una alternativa para la educacion fisica
+            </Button>
+
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => {
+                navigate("../dashboard", { replace: true });
+              }}
+            >
+              Tecnicas
+            </Button>
+
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => {
+                window.scrollTo({
+                  top: 5000,
+                  left: 0,
+                  behavior: "auto",
+                });
+              }}
+            >
+              Contacto
+            </Button>
+          </HStack>
+          {/* <Box>
             <Breadcrumb fontWeight="medium" fontSize="sm" separator="|">
               <BreadcrumbItem>
                 <BreadcrumbLink href="dashboard">Inicio</BreadcrumbLink>
@@ -67,8 +134,8 @@ const Header = () => {
                 <BreadcrumbLink href="#">Contacto</BreadcrumbLink>
               </BreadcrumbItem>
             </Breadcrumb>
-          </Box>
-          <ColorModeSwitcher />
+          </Box> */}
+          <ColorModeSwitcher size="sm" />
         </HStack>
       </HStack>
       <Outlet />
