@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.js": "/kenshukan/static/js/main.adbd92cf.js",
+    "static/media/fondo.jpg": "/kenshukan/static/media/fondo.968d10d8ab8100a71f67.jpg",
+    "static/media/logoKnk.jpg": "/kenshukan/static/media/logoKnk.eecabb39e8580b5df60d.jpg",
+    "static/media/libroo.jpg": "/kenshukan/static/media/libroo.ad1df48ee4d9f254898d.jpg",
+    "static/media/kanji-karate-do.jpg": "/kenshukan/static/media/kanji-karate-do.5893de815f0039ef5a00.jpg",
+    "index.html": "/kenshukan/index.html",
+    "main.adbd92cf.js.map": "/kenshukan/static/js/main.adbd92cf.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.adbd92cf.js"
+  ]
+}
