@@ -23,7 +23,7 @@ const Footer = () => {
           <ListItem>Facilisis in pretium nisl aliquet</ListItem>
         </List>
       </Box>
-      <HStack>
+      <HStack bg="gray.700">
         <Box m="1px">
           <IconButton icon={<FaFacebookF />} />
         </Box>

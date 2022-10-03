@@ -13,14 +13,11 @@ import {
   useColorMode,
 } from "@chakra-ui/react";
 import { BsSearch } from "react-icons/bs";
-import Aside from "./Aside";
-import Reserve from "./Reserve";
 
-const Main = () => {
+const QueryMain = () => {
   const { colorMode } = useColorMode();
-
   return (
-    <Stack w="79%">
+    <Stack>
       <VStack border="1px solid transparent" mt="30px">
         <Box display="flex" position="absolute" right="40" w="20%">
           <InputGroup size="md" justifyContent="right">
@@ -53,18 +50,12 @@ const Main = () => {
           </Text>
         </HStack>
       </VStack>
-      <HStack w="100%" justifyContent="space-around">
-        <Box flexWrap="wrap" p={2}>
-          <Reserve />
-          <Divider h="10px" />
-          <Aside />
-        </Box>
-        <Box w="800px" h="600px" textAlign="center">
-          <p>Galeria inicio</p>
-        </Box>
-      </HStack>
+
+      <Box w="100%" h="600px" textAlign="center">
+        <p>Galeria inicio</p>
+      </Box>
     </Stack>
   );
 };
 
-export default Main;
+export default QueryMain;
