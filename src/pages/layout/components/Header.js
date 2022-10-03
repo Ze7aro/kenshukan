@@ -107,34 +107,7 @@ const Header = () => {
               Contacto
             </Button>
           </HStack>
-          {/* <Box>
-            <Breadcrumb fontWeight="medium" fontSize="sm" separator="|">
-              <BreadcrumbItem>
-                <BreadcrumbLink href="dashboard">Inicio</BreadcrumbLink>
-              </BreadcrumbItem>
 
-              <BreadcrumbItem>
-                <BreadcrumbLink href="explain">
-                  ¿Que es karate-do?
-                </BreadcrumbLink>
-              </BreadcrumbItem>
-
-              <BreadcrumbItem>
-                <BreadcrumbLink href="places">¿Donde practicar?</BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbItem>
-                <BreadcrumbLink href="book">
-                  Karatedo: Una alternativa para la educacion fisica
-                </BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbItem>
-                <BreadcrumbLink href="#">Tecnicas</BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbItem>
-                <BreadcrumbLink href="#">Contacto</BreadcrumbLink>
-              </BreadcrumbItem>
-            </Breadcrumb>
-          </Box> */}
           <ColorModeSwitcher size="sm" />
         </HStack>
       </HStack>
